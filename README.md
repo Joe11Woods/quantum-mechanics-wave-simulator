@@ -1,10 +1,18 @@
 # Infinite Potential Sqaure Well Simulator
+
+A Python-based computational model for visualising the time evolution of quantum wavefunctions in a 1D infinite potential well.
+
 #### Video Demo:  <(https://youtu.be/O3T43Yoo6i8)>
-#### Description:it
+
+#### Example
+
+![Quantum wavefunction simulation](infinite-square-well.png)
+
+#### Description:
 
 A Python program that simulates the time evolution of quantum wavefunctions in an infinite square well.
 
-As a current physics student, the qunatum realm is something that has always fascinated me and this programme allows us to visualise some of the meaning represented by these cryptic wavefunctions. When the user inputs a wave function, the programme displays the probability density, which is where the physical interpretation becomes particularly clear. I choose to display the wavefunction's real and imaginary parts too, as they explain what is going on behind the scenes, as well as being an interesting visual.
+As a current physics student, the quantum realm is something that has always fascinated me and this programme allows us to visualise some of the meaning represented by these cryptic wavefunctions. When the user inputs a wave function, the programme displays the probability density, which is where the physical interpretation becomes particularly clear. I choose to display the wavefunction's real and imaginary parts too, as they explain what is going on behind the scenes, as well as being an interesting visual.
 
  The user is able to chose between an electron, proton and neutron as these are the particles contained in scipy constants. It is possible to run with this code with any made-up particle with any arbitrary mass, however I limited the user to just these three results for the user's sake of simplicity.
 
