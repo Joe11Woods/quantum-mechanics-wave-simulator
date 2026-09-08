@@ -6,7 +6,7 @@ A Python-based computational model for visualising the time evolution of quantum
 
 #### Example
 
-![Quantum wavefunction simulation](infinite-square-well.png)
+![Quantum wavefunction simulation](example.png)
 
 #### Description:
 
