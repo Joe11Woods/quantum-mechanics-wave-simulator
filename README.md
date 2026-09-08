@@ -8,33 +8,52 @@ A Python-based computational model for visualising the time evolution of quantum
 
 ![Quantum wavefunction simulation](example.gif)
 
-#### Description:
+## Overview
 
-A Python program that simulates the time evolution of quantum wavefunctions in an infinite square well.
+This project simulates the time evolution of quantum wavefunctions in an infinite square well. The user can select a particle, define the well size, and construct a normalised wavefunction from multiple energy eigenstates.
 
-As a current physics student, the quantum realm is something that has always fascinated me and this programme allows us to visualise some of the meaning represented by these cryptic wavefunctions. When the user inputs a wave function, the programme displays the probability density, which is where the physical interpretation becomes particularly clear. I choose to display the wavefunction's real and imaginary parts too, as they explain what is going on behind the scenes, as well as being an interesting visual.
+## Physics
 
- The user is able to chose between an electron, proton and neutron as these are the particles contained in scipy constants. It is possible to run with this code with any made-up particle with any arbitrary mass, however I limited the user to just these three results for the user's sake of simplicity.
+For a particle in an infinite square well, the energy of the nth stationary state is
 
- In order to make the GIF a seamless loop, the time period of the wave function needed to be calculated. This is easy enough to do for one state. However, it gets more complicated for superposed states. Therefore I decided to implement a numerical estimate. This involved updating the time-dependent wave function incrementally and checking whether it was close to the initial state. If this could not be found, an estimate was given instead.
+E_n = n²π²ℏ² / (2mL²)
 
-Future developments of this work could involve a finite potential well, a harmonic oscillator, and quantum tunnelling.
+A general wavefunction can be constructed as a superposition of stationary states:
 
+Ψ(x,t) = Σ c_n ψ_n(x)e^(-iE_nt/ℏ)
 
-Installation:
- - Install the required libraries:
+The probability density of the wavefunction is 
 
-    pip install -r requirements.txt
+|Ψ(x,t)|^2
 
-Usage:
+## Features
+
+- Infinite square well simulation
+- Electron, proton and neutron support
+- Arbitrary superpositions of energy eigenstates
+- Time-dependent wavefunctions
+- Real and imaginary wavefunction components
+- Probability density visualisation
+- Animated time evolution
+- For wavefunctions containing 2 or more superpositions, the time period is estimated numerically
+- Automated tests using pytest
+
+## Installation
+
+Install the required dependencies in requirements.txt
+
+## Usage
+
  - Run with `python project.py`
  - The user is prompted for a particle
  - The user is prompted for the size of the well (must be a positive real number)
- - The user is prompted for a wave function. This code supports any number of superposed states, but the wavefunction   must be noramlised
+ - The user is prompted for a wave function. This code supports any number of superposed states, but the wavefunction   must be noramlized
  - Press Ctrl+D after all required information has been entered to generate the animation.
 
-Features:
- - Display of the real part, imaginary part, and probability density of any normalised wavefunction
- - Electron, proton, and neutron support
- - Time-dependant wavefunctions
- - For wavefunctions containing 2 or more superpositions, the time period estimated numerically
+## Future Development
+
+Future developments of this work could involve implementing a finite potential well, a harmonic oscillator, and quantum tunnelling.
+
+
+
+
