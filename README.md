@@ -6,7 +6,7 @@ A Python-based computational model for visualising the time evolution of quantum
 
 #### Example
 
-![Quantum wavefunction simulation](example.png)
+![Quantum wavefunction simulation](example.gif)
 
 #### Description:
 
